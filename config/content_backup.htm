@@ -1,42 +1,34 @@
-<h1>About</h1>
-<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
-<h4>利用 cmsimde 建立靜態網誌方法:</h4>
-<p>1. 在 github 建立倉儲, git clone 到近端</p>
-<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
-<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
-<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
-<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
-<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
-<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<h1>第2-9週</h1>
-<h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">第1週</span></span></h4>
+<h1>Week</h1>
+<h4>week 02-05</h4>
+<h4>week 06-09</h4>
+<h4>week10-14</h4>
+<h4>week15-18</h4>
+<h2>Week01</h2>
 <p>中秋節放假</p>
-<h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">第2週</span></span></h4>
+<h2><span><span>Week02</span></span></h2>
 <p><strong>創建github倉儲並且練習github指令</strong></p>
 <p>1.創立並且加入課程倉儲git clone到近端上，<span>下載</span><a href="https://drive.google.com/file/d/1fxMdqdCoCL__O1IpZ-Sv-A_4-c77Wx4E/view?usp=sharing">2019Fall可攜套件.7z</a><span>，完成後開啟start。</span></p>
 <p>2.使用git config --global user設定姓名、email、proxy。</p>
 <p>3.使用git submodule add 之指令建立目錄並取下子模組。</p>
 <p>4.輸入python -m pip install flask cors。</p>
 <p>5.當要開啟近端時必須要先進入cmsimde才能夠打上python wsgi.py指令，且開啟的隨身碟必須為正確的非虛擬的磁碟槽(如:d: or e:)才能夠開啟。</p>
-<h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">第3週</span></span></h4>
+<h2><span><span>Week03</span></span></h2>
 <p><strong>Solvespace編譯</strong></p>
 <p>1.<span>Y:\portablegit\bin\sh.exe 改名為 sh_rename_for_solvespace.exe。</span></p>
 <p>2.查驗github版本(2.13以上)。</p>
-<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">3. </span></span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"> git clone  </span></span></span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">--recurse-submodules。</span></span></span></p>
+<p><span><span>3. </span></span><span><span><span> git clone  </span></span></span><span><span><span>--recurse-submodules。</span></span></span></p>
 <p><span>4.編輯cmakelist內之713及714行(加入#字號)。</span></p>
-<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">5. </span></span><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">cdsolvespace&gt; cd extlib&gt; cd libpng&gt; mkdir build&gt; cd build。</span></span></span></p>
-<p><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">6.執行cmake .. -G“ MinGW Makefiles” -DCMAKE_BUILD_TYPE =發布</span></span><br/><span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">mingw32-make。</span></span></span></span></p>
+<p><span><span>5. </span></span><span><span><span>cdsolvespace&gt; cd extlib&gt; cd libpng&gt; mkdir build&gt; cd build。</span></span></span></p>
+<p><span><span><span>6.執行cmake .. -G“ MinGW Makefiles” -DCMAKE_BUILD_TYPE =發布</span></span><br/><span><span><span>mingw32-make。</span></span></span></span></p>
 <p>7.進行<span> libpng.dll.a 更名, 更名名為 libpng_static.a。</span></p>
 <p><span>8.回到 solvespace 原始碼目錄,建立 build 目錄後進入 build 目錄。</span></p>
 <p><span>9.在一次執行cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release<br/><span>mingw32-make。</span></span></p>
-<h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">第4週</span></span></h4>
+<h2><span><span>Week04</span></span></h2>
 <p>網站更新</p>
 <p>增加網站內容</p>
-<h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">第4週</span></span></h4>
+<h2><span>Week04</span></h2>
 <p>推薦錄影程式與字幕程式</p>
 <p>1.錄影程式</p>
-<p><span></span></p>
 <p><span>ShareX(圖一)</span></p>
 <h4><span><img alt="" height="306" src="/images/SharedScreenshot.jpg" width="536"/></span></h4>
 <p><span>(圖一)</span></p>
@@ -48,27 +40,27 @@
 <p><span><span>Arctime(圖四)</span></span></p>
 <p><span><span><img alt="" height="300" src="https://s40723221.github.io/cad2019/images/20170212100119807.jpg" width="300"/>(圖四)</span></span></p>
 <h4 class="post-title entry-title" itemprop="name"><strong><br/><br/></strong></h4>
-<h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">week5</span></span></h4>
+<h2><span><span>Week05</span></span></h2>
 <p>Solvespace的操作(聖誕樹)</p>
 <p>1.首先先用直線畫出底座</p>
 <p>2.再用曲線畫出輪廓</p>
 <p>3.接著劃出旋轉軸並對正中心</p>
 <p>4.再點選旋轉軸，旋轉出整個輪廓</p>
-<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">5.再稍微修改一下</span></span></p>
+<p><span><span>5.再稍微修改一下</span></span></p>
 <p>6.改顏色</p>
 <p>7.選取一個點案<span> shift-w</span>建立新草圖</p>
 <p>8.在畫上面的裝飾</p>
 <p>9.更改裝飾顏色</p>
-<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">10.大功告成</span></span></p>
+<p><span><span>10.大功告成</span></span></p>
 <p>教學影片:</p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/RVLFsjCkX5E" width="560"></iframe>(cc字幕)</p>
-<h4><span style="vertical-align: inherit;">week6</span></h4>
-<p><span style="vertical-align: inherit;">第一步驟</span></p>
+<p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="//www.youtube.com/embed/RVLFsjCkX5E" width="560"></iframe>(cc字幕)</p>
+<h2>Week06</h2>
+<p><span>第一步驟</span></p>
 <p><br/>1.先畫出一個輪子，記得要畫出軸來組裝到車體上。</p>
 <p>2.畫出車體，記得要挖掉軸孔來配合輪子。</p>
 <p>3.將車體與輪子組裝起來，這樣就完成了。</p>
 <p>教學影片:</p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/2HytEdStTLk" width="560"></iframe></p>
+<p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="//www.youtube.com/embed/2HytEdStTLk" width="560"></iframe></p>
 <p>(cc字幕)</p>
 <p>第二步驟</p>
 <p>1.先到take1中<span>下載</span><span> </span><span><a href="https://drive.google.com/file/d/1cZFSsLEoGOBYojzKzFEf4YH2l--pbS-9/view?usp=sharing">V-rep 3.6.1 rev 4.7z</a></span><span> 及<span><a href="https://github.com/mdecourse/mocad/files/3583773/web_vrep2.zip">web_vrep2.zip</a> (<a href="http://mde.tw/cad2019/downloads/web_vrep2.zip">local</a>)</span>並解壓縮到隨身碟。</span></p>
@@ -77,4 +69,22 @@
 <p><span>4.開啟web_vrep2中的app.py點下GO。</span></p>
 <p><span>5.在複製的網址中控制車子</span></p>
 <p><span>教學影片</span></p>
-<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/eAwINx5jiJ0" width="560"></iframe>(CC字幕)</span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="//www.youtube.com/embed/eAwINx5jiJ0" width="560"></iframe>(CC字幕)</span></p>
+<h1>About</h1>
+<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
+<h4>利用 cmsimde 建立靜態網誌方法:</h4>
+<p>1. 在 github 建立倉儲, git clone 到近端</p>
+<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
+<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
+<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
+<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
+<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
+<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
+<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
+<h1>Develop</h1>
+<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
+<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
+<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
+<h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"></span></span></h4>
+<h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"></span></span></h4>
+<span style="vertical-align: inherit;"></span>
